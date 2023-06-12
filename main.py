@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import torch
+import random
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 
 app = FastAPI()
@@ -33,3 +34,8 @@ def detect(id: str, content: str):
 
     return {"id": id, "content": content, "result": predicted_labels.item()}
 
+
+@app.get("/api/v1/fake_detect")
+def fake_detect(id: str, content:str):
+    result = random.choice([0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1]) 
+    return {"id": id, "content": content, "result": result}
