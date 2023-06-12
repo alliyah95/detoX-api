@@ -1,10 +1,18 @@
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 import torch
+import random
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 
 app = FastAPI()
 tokenizer = AutoTokenizer.from_pretrained('albert-base-v2')
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_methods=["GET", "POST", "PUT", "DELETE"],
+    allow_headers=["Content-Type"],
+)
 
 @app.get("/")
 def root():
@@ -12,7 +20,7 @@ def root():
 
 
 @app.get("/api/v1/detect")
-def detect(id: str, content: str):
+def detect(content: str):
     model = AutoModelForSequenceClassification.from_pretrained("./model/")
     tokens = tokenizer(content, truncation=True, padding=True, return_tensors="pt")
     input_tensors = tokens["input_ids"]
@@ -24,4 +32,11 @@ def detect(id: str, content: str):
     logits = outputs.logits
     predicted_labels = logits.argmax(dim=1)
 
-    return {"id": id, "content": content, "result": predicted_labels.item()}
+    return {"result": predicted_labels.item()}
+
+
+
+@app.get("/api/v1/fake_detect")
+def fake_detect(content:str):
+    result = random.choice([0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1]) 
+    return {"result": result}
