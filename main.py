@@ -5,7 +5,7 @@ import random
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 
 app = FastAPI()
-tokenizer = AutoTokenizer.from_pretrained('albert-base-v2')
+tokenizer = AutoTokenizer.from_pretrained('jcblaise/roberta-tagalog-base')
 
 app.add_middleware(
     CORSMiddleware,
