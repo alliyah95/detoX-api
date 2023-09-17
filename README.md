@@ -1,17 +1,26 @@
-# Hate Speech Detector - Server
+<div align="center">
+  <img src="https://github.com/alliyah95/detoX-api/assets/74038500/1ac3050c-023a-4f81-a205-be1a7e1c6aad" alt="detoX Logo" width="200">
 
-## Installation
+# detoX API
+
+</div>
+
+This API serves as the backend for the [detoX browser extension](https://github.com/alliyah95/detoX) designed to address hate speech detection with a particular focus on election-related and politics-related content in the Philippines. It employs a fine-tuned [RoBERTA Tagalog Base model](https://huggingface.co/jcblaise/roberta-tagalog-base), a variant of the BERT (Bidirectional Encoder Representations from Transformers) model known for its exceptional performance in NLP tasks.
+
+The model was trained using two datasets. The first dataset was a [pre-labeled Filipino hate speech dataset](https://huggingface.co/datasets/hate_speech_filipino). The second dataset consisted of tweets from the 2022 Philippine elections.
+
+## Local Setup and Installation
 
 1. Download or clone the repository to your local machine using the following command:
 
     ```
-    git clone https://github.com/alliyah95/hate-speech-detector-server.git
+    git clone https://github.com/alliyah95/detoX-api.git
     ```
 
 2. Navigate to the project directory:
 
     ```
-    cd repository-name
+    cd detoX-api
     ```
 
 3. Install the project dependencies:
@@ -28,7 +37,14 @@
     uvicorn main:app --reload
     ```
 
-2.  To test the routes with a GUI, navigate to the following URL in your browser:
+2.  To test the API endpoints with a GUI, navigate to the following URL in your browser:
     ```
     http://127.0.0.1:8000/docs#/
     ```
+
+## Authors
+
+-   Danica L. Castro
+-   Lenina Jemima V. Dizon
+-   Alliyah Joyce M. Sarip
+-   Mark Aaron P. Soriano
