@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from transformers import pipeline
 
 app = FastAPI()
+classifier = pipeline("text-classification", model="./model")
 
 app.add_middleware(
     CORSMiddleware,
@@ -17,7 +18,6 @@ def root():
 
 @app.get("/api/v1/detect")
 def detect(content: str):
-    classifier = pipeline("text-classification", model="./model")
     if (classifier(content)[0]['label'] == "HATE"):
         return {'result': 1}
     else:
