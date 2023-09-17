@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://github.com/alliyah95/detoX-api/assets/74038500/37646241-b672-4823-a6f3-e60815c35f06" alt="detoX Logo" width="200">
+  <img src="https://github.com/alliyah95/detoX-api/assets/74038500/1ac3050c-023a-4f81-a205-be1a7e1c6aad" alt="detoX Logo" width="200">
 
 # detoX API
 
