@@ -1,6 +1,5 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-import torch
 from transformers import pipeline
 
 app = FastAPI()
