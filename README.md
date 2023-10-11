@@ -38,7 +38,7 @@ The model was trained using a [combined dataset](https://huggingface.co/datasets
 -   **Development repo:** [alliyah95/detoX](https://github.com/alliyah95/detoX)
 -   **Live:** [detoX](https://chrome.google.com/webstore/detail/detox/efibkphbodijlgbhflloachnigfmgfdi)
 
-## ⚙ Local Setup and Installation
+## 💻 Local Setup and Installation
 
 1. Download or clone the repository to your local machine using the following command:
 
