@@ -9,18 +9,6 @@ This API serves as the backend for the [detoX browser extension](https://github.
 
 The model was trained using a [combined dataset](https://huggingface.co/datasets/mapsoriano/2016_2022_hate_speech_filipino) from two sources. The first dataset was a [pre-labeled Filipino hate speech dataset](https://huggingface.co/datasets/hate_speech_filipino). The second dataset consisted of newly crawled 2022 Philippine Presidential Elections-related Tweets.
 
-## 📄 Contents
-
--   [🌐 Relevant Links](#🌐-relevant-links)
-    1. [🗂️ Datasets](#🗂️-datasets)
-    2. [🤖 Models](#🤖-models)
-    3. [🧰 Browser Extension](#🧰-browser-extension)
--   [💻 Local Setup and Installation](#⚙-local-setup-and-installation)
--   [🔍 Endpoints](#🔍-endpoints)
--   [🛠️ Built With](#🛠️-built-with)
--   [💙 Acknowledgements](#💙-acknowledgements)
--   [🧠 Authors](#🧠-authors)
-
 ## 🌐 Relevant Links
 
 ### 🗂️ Datasets
@@ -113,14 +101,15 @@ The model was trained using a [combined dataset](https://huggingface.co/datasets
 
 | Name                           | Contribution                                                                     |
 | ------------------------------ | -------------------------------------------------------------------------------- |
-| 🌟 Dr. Mary Jane Rabena        | Our thesis adviser                                                               |
-| 🌟 Dr. Arlan Dela Cruz         | For sharing his expertise in research                                            |
-| 🌟 Ms. Abijah Louise Dela Cruz | For validating our 2022 dataset                                                  |
-| 🌟 Dr. Ocirne Jun-Jun Liwanag  | For evaluating our browser extension                                             |
-| 🌟 Mr. Arvin del Rosario       | For evaluating our browser extension                                             |
-| 🌟 Mr. John Montes             | For evaluating our browser extension                                             |
-| 🌟 Mr. Nelson Dizon            | For evaluating our browser extension                                             |
-| 🌟 Mr. Alberto Castro Jr.      | For evaluating our browser extension                                             |
+| 🌟 Dr. Mary Jane Rabena        | Our Thesis Adviser                                                               |
+| 🌟 Dr. Arlan Dela Cruz         | Our Thesis Co-Adviser                                                            |
+| 🌟 Ms. Abijah Louise Dela Cruz | Dataset Validator                                                                |
+| 🌟 Dr. Alma Theresa Manaloto   | Expert Evaluator                                                                 |
+| 🌟 Dr. Ocirne Jun-Jun Liwanag  | Expert Evaluator                                                                 |
+| 🌟 Mr. Arvin del Rosario       | Expert Evaluator                                                                 |
+| 🌟 Mr. John Montes             | Expert Evaluator                                                                 |
+| 🌟 Mr. Nelson Dizon            | Expert Evaluator                                                                 |
+| 🌟 Mr. Alberto Castro Jr.      | Expert Evaluator                                                                 |
 | 🌟 Mr. Blaise Cruz             | Publisher of the RoBERTa Tagalog Base model and the Hate Speech Filipino Dataset |
 
 ## 🧠 Authors
